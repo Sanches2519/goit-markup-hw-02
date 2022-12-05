@@ -1,0 +1,68 @@
+:root{
+--main-text-color: #212121;
+--secondary-text-color: #757575;
+--secondary-color: #2196F3;
+--primary-style-button: #F5F4FA;
+--secondary-text-btn: #FFFFFF;
+--text-footer: #FFFFFF;
+--contact-link-footer: rgba(255, 255, 255, 0.6);
+}
+
+body {
+    color: var(--main-text-color);
+}
+.list{
+    list-style: none;
+}
+/* --Логотип */
+.logo-link{
+    color: var(--secondary-color);
+}
+.logo-header{
+    color: var(--main-text-color);
+}
+.site-nav{
+    color: var(--main-text-color);
+}
+.site-nav:hover,
+.site-nav:focus{
+    color: var(--secondary-color);
+}
+.current{
+    color: var(--secondary-color);
+}
+.site-nav-current:active{
+    color: var(--secondary-color);
+} 
+.contact-link{
+    color: var(--secondary-text-color);    
+}
+.contact-link:hover,
+.contact-link:focus {
+color: var(--secondary-color);
+}
+/* Головний заголовок на index.html */
+.button{
+    color: var(--main-text-color);
+    background-color: var(--primary-style-button);
+}
+.button:hover,
+.button:focus{
+    color: var(--secondary-text-btn);
+    background-color: var(--secondary-color);
+} 
+/* особливості */
+.text{
+    color: var(--secondary-text-color);
+}
+/* Footer */
+.logo-footer{
+    color: var(--text-footer);
+}
+.address{
+    color: var(--text-footer);
+}
+.footer-contact{
+    color: var(--contact-link-footer);
+}
+
