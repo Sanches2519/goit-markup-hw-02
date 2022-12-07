@@ -6,23 +6,53 @@
 --secondary-text-btn: #FFFFFF;
 --text-footer: #FFFFFF;
 --contact-link-footer: rgba(255, 255, 255, 0.6);
+--background-color: #2F303A;
+--secondary-background-color: #FFFFFF;
+--third-background-color:#F5F5F5;
+--fourth-background-color:  #F5F4FA;
 }
-
+.visually-hidden {
+    position: absolute;
+     white-space: nowrap;
+     width: 1px;
+     height: 1px;
+     overflow: hidden;
+     border: 0;
+     padding: 0;
+     clip: rect(0 0 0 0);
+     clip-path: inset(50%);
+     margin: -1px;
+   }
 body {
     color: var(--main-text-color);
-}
-.list{
-    list-style: none;
+    font-family: Roboto, Arial, sans-serif;
+    letter-spacing: 0.03em;
 }
 /* --Логотип */
+.header{
+    background-color: var(--secondary-background-color);
+}
+.logo{
+    font-style: normal;
+    font-weight: 700;
+font-family: Raleway, Oswald, sans-serif;
+font-size: 26px;
+line-height: 1.19;
+}
 .logo-link{
     color: var(--secondary-color);
+
 }
 .logo-header{
     color: var(--main-text-color);
 }
 .site-nav{
-    color: var(--main-text-color);
+color: var(--main-text-color);
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em
 }
 .site-nav:hover,
 .site-nav:focus{
@@ -35,16 +65,49 @@ body {
     color: var(--secondary-color);
 } 
 .contact-link{
-    color: var(--secondary-text-color);    
+    color: var(--secondary-text-color);
+ font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em   
 }
 .contact-link:hover,
 .contact-link:focus {
 color: var(--secondary-color);
 }
 /* Головний заголовок на index.html */
-.button{
-    color: var(--main-text-color);
-    background-color: var(--primary-style-button);
+.section{
+    background-color: var(--background-color);
+}
+.main-title{
+    color: var(--secondary-text-btn);
+    font-style: normal;
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+/* кнопки */
+.main-button{
+    font-style: normal;
+    font-weight: 700;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.87;    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em; 
+}
+.button-filter{
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height:1.62;
+text-align: center;
 }
 .button:hover,
 .button:focus{
@@ -52,17 +115,99 @@ color: var(--secondary-color);
     background-color: var(--secondary-color);
 } 
 /* особливості */
-.text{
-    color: var(--secondary-text-color);
+.section-features{
+    background-color: var(--third-background-color);
+}
+.text-title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+.text-desk{
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+}
+/* наша команда, чим ми займаємося */
+.section-developments{
+    background-color: var(--third-background-color);
+}
+.section-team{
+    background-color: var(--fourth-background-color);
+}
+.secondary-title{
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+}
+.team{
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.18;
+text-align: center;
+}
+.position{
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.18;
+text-align: center;
 }
 /* Footer */
+.footer{
+    background-color: var(--background-color);
+}
 .logo-footer{
     color: var(--text-footer);
 }
 .address{
     color: var(--text-footer);
+    font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
 }
 .footer-contact{
     color: var(--contact-link-footer);
 }
+/* вкладки кнопок-фільтрів на сторінці Портфоліо */
+.link-filter{
+    color: var(--main-text-color);
+}
 
+.title-filter{
+    font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+}
+.text-filter{
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.87;
+}
+.section-portfolio{
+    background-color: var(--third-background-color);
+}
+/* Загальні стилі, для двух сторінок */
+.list{
+    list-style: none;
+}
+.button{
+    color: var(--main-text-color);
+    background-color: var(--primary-style-button);
+}
+.item{
+    background-color: var(--secondary-background-color);
+}
+.text{
+    color: var(--secondary-text-color);
+}
