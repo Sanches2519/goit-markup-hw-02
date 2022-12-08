@@ -1,213 +1,210 @@
-:root{
---main-text-color: #212121;
---secondary-text-color: #757575;
---secondary-color: #2196F3;
---primary-style-button: #F5F4FA;
---secondary-text-btn: #FFFFFF;
---text-footer: #FFFFFF;
---contact-link-footer: rgba(255, 255, 255, 0.6);
---background-color: #2F303A;
---secondary-background-color: #FFFFFF;
---third-background-color:#F5F5F5;
---fourth-background-color:  #F5F4FA;
+:root {
+  --main-text-color: #212121;
+  --secondary-text-color: #757575;
+  --secondary-color: #2196f3;
+  --primary-style-button: #f5f4fa;
+  --secondary-text-btn: #ffffff;
+  --text-footer: #ffffff;
+  --contact-link-footer: rgba(255, 255, 255, 0.6);
+  --background-color: #2f303a;
+  --secondary-background-color: #ffffff;
+  --third-background-color: #f5f5f5;
+  --fourth-background-color: #f5f4fa;
+  --background-main-button: #188ce8;
 }
 .visually-hidden {
-    position: absolute;
-     white-space: nowrap;
-     width: 1px;
-     height: 1px;
-     overflow: hidden;
-     border: 0;
-     padding: 0;
-     clip: rect(0 0 0 0);
-     clip-path: inset(50%);
-     margin: -1px;
-   }
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 body {
-    color: var(--main-text-color);
-    font-family: Roboto, Arial, sans-serif;
-    letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  font-family: Roboto, Arial, sans-serif;
+  letter-spacing: 0.03em;
 }
 /* --Логотип */
-.header{
-    background-color: var(--secondary-background-color);
+.header {
+  background-color: var(--secondary-background-color);
 }
-.logo{
-    font-style: normal;
-    font-weight: 700;
-font-family: Raleway, Oswald, sans-serif;
-font-size: 26px;
-line-height: 1.19;
+.logo {
+  font-style: normal;
+  font-weight: 700;
+  font-family: Raleway, Oswald, sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
 }
-.logo-link{
-    color: var(--secondary-color);
-
+.logo-link {
+  color: var(--secondary-color);
 }
-.logo-header{
-    color: var(--main-text-color);
+.logo-header {
+  color: var(--main-text-color);
 }
-.site-nav{
-color: var(--main-text-color);
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.02em
+.site-nav {
+  color: var(--main-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .site-nav:hover,
-.site-nav:focus{
-    color: var(--secondary-color);
+.site-nav:focus {
+  color: var(--secondary-color);
 }
-.current{
-    color: var(--secondary-color);
+.current {
+  color: var(--secondary-color);
 }
-.site-nav-current:active{
-    color: var(--secondary-color);
-} 
-.contact-link{
-    color: var(--secondary-text-color);
- font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.02em   
+.site-nav-current:active {
+  color: var(--secondary-color);
+}
+.contact-link {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .contact-link:hover,
 .contact-link:focus {
-color: var(--secondary-color);
+  color: var(--secondary-color);
 }
 /* Головний заголовок на index.html */
-.section{
-    background-color: var(--background-color);
+.section {
+  background-color: var(--background-color);
 }
-.main-title{
-    color: var(--secondary-text-btn);
-    font-style: normal;
-font-weight: 900;
-font-size: 44px;
-line-height: 1.36;
-text-align: center;
-letter-spacing: 0.06em;
-text-transform: uppercase;
+.main-title {
+  color: var(--secondary-text-btn);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 /* кнопки */
-.main-button{
-    font-style: normal;
-    font-weight: 700;
-    font-family: inherit;
-    font-size: 16px;
-    line-height: 1.87;    
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em; 
+.main-button {
+  color: var(--secondary-text-btn);
+  background-color: var(--secondary-color);
+  cursor: pointer;
+  font-weight: 700;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
-.button-filter{
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height:1.62;
-text-align: center;
+.main-button:hover,
+.main-button:focus {
+  color: var(--secondary-text-btn);
+  background-color: var(--background-main-button);
+}
+.button-filter {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
 }
 .button:hover,
-.button:focus{
-    color: var(--secondary-text-btn);
-    background-color: var(--secondary-color);
-} 
+.button:focus {
+  color: var(--secondary-text-btn);
+  background-color: var(--secondary-color);
+}
 /* особливості */
-.section-features{
-    background-color: var(--third-background-color);
+.section-features {
+  background-color: var(--third-background-color);
 }
-.text-title{
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
+.text-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
 }
-.text-desk{
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
+.text-desk {
+  font-size: 14px;
+  line-height: 1.71;
 }
 /* наша команда, чим ми займаємося */
-.section-developments{
-    background-color: var(--third-background-color);
+.section-developments {
+  background-color: var(--third-background-color);
 }
-.section-team{
-    background-color: var(--fourth-background-color);
+.section-team {
+  background-color: var(--fourth-background-color);
 }
-.secondary-title{
-font-style: normal;
-font-weight: 700;
-font-size: 36px;
-line-height: 1.16;
-text-align: center;
+.secondary-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
 }
-.team{
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.18;
-text-align: center;
+.team {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
 }
-.position{
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 1.18;
-text-align: center;
+.position {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
 }
 /* Footer */
-.footer{
-    background-color: var(--background-color);
+.footer {
+  background-color: var(--background-color);
 }
-.logo-footer{
-    color: var(--text-footer);
+.logo-footer {
+  color: var(--text-footer);
 }
-.address{
-    color: var(--text-footer);
-    font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
+.address {
+  color: var(--text-footer);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
 }
-.footer-contact{
-    color: var(--contact-link-footer);
+.footer-contact {
+  color: var(--contact-link-footer);
 }
 /* вкладки кнопок-фільтрів на сторінці Портфоліо */
-.link-filter{
-    color: var(--main-text-color);
+.link-filter {
+  color: var(--main-text-color);
+}
+.button {
+  color: var(--main-text-color);
+  background-color: var(--primary-style-button);
+  cursor: pointer;
 }
 
-.title-filter{
-    font-style: normal;
-font-weight: 700;
-font-size: 18px;
-line-height: 2;
-letter-spacing: 0.06em;
+.title-filter {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
-.text-filter{
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 1.87;
+.text-filter {
+  font-size: 16px;
+  line-height: 1.87;
 }
-.section-portfolio{
-    background-color: var(--third-background-color);
+.section-portfolio {
+  background-color: var(--third-background-color);
 }
 /* Загальні стилі, для двух сторінок */
-.list{
-    list-style: none;
+.list {
+  list-style: none;
 }
-.button{
-    color: var(--main-text-color);
-    background-color: var(--primary-style-button);
+.item {
+  background-color: var(--secondary-background-color);
 }
-.item{
-    background-color: var(--secondary-background-color);
+.text {
+  color: var(--secondary-text-color);
 }
-.text{
-    color: var(--secondary-text-color);
+.link {
+  text-decoration: none;
 }
